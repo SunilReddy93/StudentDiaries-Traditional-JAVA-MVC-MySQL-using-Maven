@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+<servlet>
+  <servlet-name>signup</servlet-name>
+  <servlet-class>controller.SignupServlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>SignupValidationFilter</filter-name>
+    <filter-class>controller.SignupValidationFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>SignupValidationFilter</filter-name>
+    <url-pattern>/signup</url-pattern>
+  </filter-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxAdminPhoneDBVerification</servlet-name>
+    <servlet-class>controller.AjaxAdminPhoneDBVerificationServlet</servlet-class>
+
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AjaxAdminPhoneDBVerification</servlet-name>
+    <url-pattern>/AjaxAdminPhoneDBVerification</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AjaxAdminEmailDBVerification</servlet-name>
+    <servlet-class>controller.AjaxAdminEmailDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxAdminEmailDBVerification</servlet-name>
+    <url-pattern>/AjaxAdminEmailDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxTeacherEmailDBVerification</servlet-name>
+    <servlet-class>controller.AjaxTeacherEmailDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxTeacherEmailDBVerification</servlet-name>
+    <url-pattern>/AjaxTeacherEmailDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxTeacherPhoneDBVerification</servlet-name>
+    <servlet-class>controller.AjaxTeacherPhoneDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxTeacherPhoneDBVerification</servlet-name>
+    <url-pattern>/AjaxTeacherPhoneDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxTeacherAdminId</servlet-name>
+    <servlet-class>controller.AjaxTeacherAdminIdServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxTeacherAdminId</servlet-name>
+    <url-pattern>/AjaxTeacherAdminId</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>AjaxTeacherAdminSchoolSignup</servlet-name>
+  <servlet-class>controller.AjaxTeacherAdminSchoolSignupServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>AjaxTeacherAdminSchoolSignup</servlet-name>
+  <url-pattern>/AjaxTeacherAdminSchoolSignup</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>AjaxStudentTeacherIdSignup</servlet-name>
+  <servlet-class>controller.AjaxStudentTeacherIdSignupServlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentTeacherIdSignup</servlet-name>
+    <url-pattern>/AjaxStudentTeacherIdSignup</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxStudentTeacherCourseSignup</servlet-name>
+    <servlet-class>controller.AjaxStudentTeacherCourseSignupServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentTeacherCourseSignup</servlet-name>
+    <url-pattern>/AjaxStudentTeacherCourseSignup</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AjaxStudentTeacherSchoolSignup</servlet-name>
+    <servlet-class>controller.AjaxStudentTeacherSchoolSignupServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentTeacherSchoolSignup</servlet-name>
+    <url-pattern>/AjaxStudentTeacherSchoolSignup</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxStudentEmailDBVerification</servlet-name>
+    <servlet-class>controller.AjaxStudentEmailDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentEmailDBVerification</servlet-name>
+    <url-pattern>/AjaxStudentEmailDBVerification</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AjaxParentEmailDBVerification</servlet-name>
+    <servlet-class>controller.AjaxParentEmailDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxParentEmailDBVerification</servlet-name>
+    <url-pattern>/AjaxParentEmailDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxStudentPhoneDBVerification</servlet-name>
+    <servlet-class>controller.AjaxStudentPhoneDBVerificationServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentPhoneDBVerification</servlet-name>
+    <url-pattern>/AjaxStudentPhoneDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxParentPhoneDBVerification</servlet-name>
+    <servlet-class>controller.AjaxParentPhoneDBVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxParentPhoneDBVerification</servlet-name>
+    <url-pattern>/AjaxParentPhoneDBVerification</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>LoginVerificationServlet</servlet-name>
+    <servlet-class>controller.LoginVerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginVerificationServlet</servlet-name>
+    <url-pattern>/LoginVerificationServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminLogout</servlet-name>
+    <servlet-class>controller.AdminLogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminLogout</servlet-name>
+    <url-pattern>/AdminLogout</url-pattern>
+  </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>TeacherLogout</servlet-name>
+        <servlet-class>controller.TeacherLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TeacherLogout</servlet-name>
+        <url-pattern>/TeacherLogout</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>StudentLogout</servlet-name>
+        <servlet-class>controller.StudentLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentLogout</servlet-name>
+        <url-pattern>/StudentLogout</url-pattern>
+    </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminUpdation</servlet-name>
+    <servlet-class>controller.AdminUpdationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminUpdation</servlet-name>
+    <url-pattern>/AdminUpdation</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminAccountDeletion</servlet-name>
+    <servlet-class>controller.AdminAccountDeletionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminAccountDeletion</servlet-name>
+    <url-pattern>/AdminAccountDeletion</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminChangePasswordSubmit</servlet-name>
+    <servlet-class>controller.AdminChangePasswordSubmitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminChangePasswordSubmit</servlet-name>
+    <url-pattern>/AdminChangePasswordSubmit</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherStudentFeedbackSubmit</servlet-name>
+        <servlet-class>controller.TeacherStudentFeedbackSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TeacherStudentFeedbackSubmit</servlet-name>
+        <url-pattern>/TeacherStudentFeedbackSubmit</url-pattern>
+    </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>TeacherAccountDeletion</servlet-name>
+    <servlet-class>controller.TeacherAccountDeletionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TeacherAccountDeletion</servlet-name>
+    <url-pattern>/TeacherAccountDeletion</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>TeacherProfileUpdation</servlet-name>
+    <servlet-class>controller.TeacherProfileUpdationServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>TeacherProfileUpdation</servlet-name>
+    <url-pattern>/TeacherProfileUpdation</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>TeacherChangePasswordSubmit</servlet-name>
+    <servlet-class>controller.TeacherChangePasswordSubmitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TeacherChangePasswordSubmit</servlet-name>
+    <url-pattern>/TeacherChangePasswordSubmit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AjaxAdminDashboardChart</servlet-name>
+    <servlet-class>controller.AjaxAdminDashboardChartServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxAdminDashboardChart</servlet-name>
+    <url-pattern>/AjaxAdminDashboardChart</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxTeacherDashboardPie</servlet-name>
+    <servlet-class>controller.AjaxTeacherDashboardPieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxTeacherDashboardPie</servlet-name>
+    <url-pattern>/AjaxTeacherDashboardPie</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxStudentDashboardChart1</servlet-name>
+    <servlet-class>controller.AjaxStudentDashboardChart1Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentDashboardChart1</servlet-name>
+    <url-pattern>/AjaxStudentDashboardChart1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AjaxStudentDashboardChart2</servlet-name>
+    <servlet-class>controller.AjaxStudentDashboardChart2Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxStudentDashboardChart2</servlet-name>
+    <url-pattern>/AjaxStudentDashboardChart2</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>StudentProfileUpdation</servlet-name>
+  <servlet-class>controller.StudentProfileUpdationServlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentProfileUpdation</servlet-name>
+    <url-pattern>/StudentProfileUpdation</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StudentAccountDeletion</servlet-name>
+    <servlet-class>controller.StudentAccountDeletionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentAccountDeletion</servlet-name>
+    <url-pattern>/StudentAccountDeletion</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StudentChangePasswordSubmit</servlet-name>
+    <servlet-class>controller.StudentChangePasswordSubmitServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>StudentChangePasswordSubmit</servlet-name>
+    <url-pattern>/StudentChangePasswordSubmit</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>AdminPasswordResetSubmit</servlet-name>
+    <servlet-class>controller.AdminPasswordResetSubmitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminPasswordResetSubmit</servlet-name>
+    <url-pattern>/AdminPasswordResetSubmit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StudentPasswordResetSubmit</servlet-name>
+    <servlet-class>controller.StudentPasswordResetSubmitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentPasswordResetSubmit</servlet-name>
+    <url-pattern>/StudentPasswordResetSubmit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TeacherPasswordResetSubmit</servlet-name>
+    <servlet-class>controller.TeacherPasswordResetSubmitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TeacherPasswordResetSubmit</servlet-name>
+    <url-pattern>/TeacherPasswordResetSubmit</url-pattern>
+  </servlet-mapping>
+
+</web-app>
